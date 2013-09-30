@@ -459,7 +459,7 @@
     //_percentageCellDataUsed = ceilf((float)(_currentCellUploadData + _currentCellDownloadData + [self getDataUsed])*100/[self getDataCap]);
     _percentageCellDataUsed = ((_currentCellUploadData + _currentCellDownloadData + [self getDataUsed])*100/[self getDataCap]);
     _percentageDataLabelForMinimumDisplay.text = [NSString stringWithFormat:@"%i",_percentageCellDataUsed];
-    if(_percentageCellDataUsed > 100)_percentageDataLabelForMinimumDisplay.text = @"99";
+    if(_percentageCellDataUsed >= 100)_percentageDataLabelForMinimumDisplay.text = @"99";
     
     NSString *stringForSingleDays = @"Plan ends today";
     if([self getDaysRemaining] == 1)
