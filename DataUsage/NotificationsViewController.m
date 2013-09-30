@@ -29,6 +29,11 @@
     
     [self.notificationToggleSwitch setOn:[defaults boolForKey:@"NotificationToBeScheduled"]];
     
+    if([defaults integerForKey:@"Plan Type"] == 3)//for daily disable the switch
+    {
+        [self.notificationToggleSwitch setOn:NO];
+        self.notificationToggleSwitch.enabled = NO;
+    }
 }
 
 

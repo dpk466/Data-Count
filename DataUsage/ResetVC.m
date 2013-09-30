@@ -51,7 +51,7 @@ int tag;
 
 - (IBAction)gestureToRestet:(id)sender
 {
-    NSLog(@"Gesture Recognosed for Reset");
+    //NSLog(@"Gesture Recognosed for Reset Current");
     tag = 0;
     alertMessage = @"Reset Current";
     alertTitle = @"Data for your current bill cycle will be erased.";
@@ -67,7 +67,7 @@ int tag;
 
 - (IBAction)gestureToRestetAll:(id)sender
 {
-    NSLog(@"Gesture Recognosed for Reset All");
+    //NSLog(@"Gesture Recognosed for Reset All");
     tag = 1;
     alertMessage = @"Reset All";
     alertTitle = @"All previous data usage will be erased.";

@@ -124,7 +124,6 @@ id planTypeString;
     
     [MyLocalNotifications createAndScheduleLocalNotifications];
     
-    
     [self.navigationController popViewControllerAnimated:YES];
     
 }

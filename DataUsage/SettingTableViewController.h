@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
+#import <MessageUI/MFMailComposeViewController.h>
+
 @protocol settingMenuDelegate <NSObject>//protocol for implementing popover in iPad
 @required
 -(void)dismissSettingPopOverView;

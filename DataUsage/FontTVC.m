@@ -41,10 +41,10 @@
     // Uncomment the following line to have entire set of font-style in app
     //_fontStyleNames = [[Fonts alloc]init].fontNamesArray;
     
-   for(NSString * myfontName in _fontStyleNames)
-   {
-       NSLog(@"....%@",myfontName);
-   }
+   //for(NSString * myfontName in _fontStyleNames)
+   //{
+   //    NSLog(@"....%@",myfontName);
+   //}
     
     defaults = [NSUserDefaults standardUserDefaults];
     self.fontStyleRow = [defaults integerForKey:@"Font Style"];

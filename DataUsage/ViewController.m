@@ -144,7 +144,7 @@
     
     self.scrollView.backgroundColor = two.view.backgroundColor;
     self.scrollView.contentSize = CGSizeMake(self.scrollView.frame.size.width*2, self.scrollView.frame.size.height);
-    NSLog(@"\nEntire content size :\n\n\t\t%1.0f\n\t\t%1.0f",self.scrollView.contentSize.width,self.scrollView.contentSize.height);
+    //NSLog(@"\nEntire content size :\n\n\t\t%1.0f\n\t\t%1.0f",self.scrollView.contentSize.width,self.scrollView.contentSize.height);
     self.pageControl.numberOfPages = [controllers count];
     
     if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)

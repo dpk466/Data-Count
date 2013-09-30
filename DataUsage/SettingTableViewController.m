@@ -14,11 +14,14 @@
 #import "ThemeTVC.h"
 #import "ResetVC.h"
 #import "NotificationsViewController.h"
-#import "AboutTVC.h"
+//#import "AboutTVC.h"
 //#import "ViewController.h"
 //#import "FirstViewController.h"
 #import "MyLocalNotifications.h"
 #import "AppOsVersion.h"
+
+//#import <MessageUI/MFMessageComposeViewController.h>
+
 
 
 @interface SettingTableViewController ()<MFMailComposeViewControllerDelegate>
@@ -239,7 +242,6 @@
                 break;
                 
             case 2://Support
-                //[self showActivityViewController];
                 [self support];
                 break;
                 
@@ -340,7 +342,7 @@
     
 }
 
-#pragma mark-Mail Delegate method
+#pragma mark- Mail Delegate method
 
 -(void)mailComposeController:(MFMailComposeViewController *)controller didFinishWithResult:(MFMailComposeResult)result error:(NSError *)error{
     if(error)
@@ -352,6 +354,7 @@
     }
     [self.tableView reloadData];
 }
+
 
 
 

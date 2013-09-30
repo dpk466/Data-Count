@@ -41,7 +41,6 @@
 		5397163117BE2CCB00EE204E /* AddUsageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 5397163017BE2CCB00EE204E /* AddUsageVC.m */; };
 		5398552417D9DCE40096E90D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5398552317D9DCE40096E90D /* ViewController.m */; };
 		539A672117B3CB920059C32F /* DataPlanTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 539A672017B3CB920059C32F /* DataPlanTVC.m */; };
-		539C0B5817BE5E8900F50CD8 /* AboutTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 539C0B5717BE5E8900F50CD8 /* AboutTVC.m */; };
 		539EC9E717EC714D00BBC8D7 /* IpadStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 539EC9E617EC714D00BBC8D7 /* IpadStoryboard.storyboard */; };
 		539F3D7417F590D800E774FD /* KeychainItemWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 539F3D7317F590D800E774FD /* KeychainItemWrapper.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		539F3D7717F593A600E774FD /* MyLocalNotifications.m in Sources */ = {isa = PBXBuildFile; fileRef = 539F3D7617F593A600E774FD /* MyLocalNotifications.m */; };
@@ -130,8 +129,6 @@
 		5398552317D9DCE40096E90D /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		539A671F17B3CB920059C32F /* DataPlanTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataPlanTVC.h; sourceTree = "<group>"; };
 		539A672017B3CB920059C32F /* DataPlanTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataPlanTVC.m; sourceTree = "<group>"; };
-		539C0B5617BE5E8900F50CD8 /* AboutTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutTVC.h; sourceTree = "<group>"; };
-		539C0B5717BE5E8900F50CD8 /* AboutTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutTVC.m; sourceTree = "<group>"; };
 		539EC9E617EC714D00BBC8D7 /* IpadStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = IpadStoryboard.storyboard; sourceTree = "<group>"; };
 		539F3D7217F590D800E774FD /* KeychainItemWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KeychainItemWrapper.h; path = DataUsage/Model/KeychainItemWrapper.h; sourceTree = "<group>"; };
 		539F3D7317F590D800E774FD /* KeychainItemWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KeychainItemWrapper.m; path = DataUsage/Model/KeychainItemWrapper.m; sourceTree = "<group>"; };
@@ -169,8 +166,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				539F3D7917F5941100E774FD /* Security.framework in Frameworks */,
 				5393BC3217E9D37000EB92A9 /* MessageUI.framework in Frameworks */,
+				539F3D7917F5941100E774FD /* Security.framework in Frameworks */,
 				53BF8A4417AA2EFB005D4726 /* UIKit.framework in Frameworks */,
 				53BF8A4617AA2EFB005D4726 /* Foundation.framework in Frameworks */,
 				53BF8A4817AA2EFB005D4726 /* CoreGraphics.framework in Frameworks */,
@@ -227,8 +224,6 @@
 				53676BCF17F16EF9007DCA6B /* NotificationsViewController.m */,
 				5380D80117CB647500F4FBB5 /* ResetVC.h */,
 				5380D80217CB647500F4FBB5 /* ResetVC.m */,
-				539C0B5617BE5E8900F50CD8 /* AboutTVC.h */,
-				539C0B5717BE5E8900F50CD8 /* AboutTVC.m */,
 			);
 			name = Settings;
 			sourceTree = "<group>";
@@ -517,7 +512,6 @@
 				5393BC4217EAE38400EB92A9 /* SecondViewController.m in Sources */,
 				53676BD017F16EF9007DCA6B /* NotificationsViewController.m in Sources */,
 				539F3D7717F593A600E774FD /* MyLocalNotifications.m in Sources */,
-				539C0B5817BE5E8900F50CD8 /* AboutTVC.m in Sources */,
 				5393BC5117EAFF6F00EB92A9 /* Theme.m in Sources */,
 				5380D80317CB647500F4FBB5 /* ResetVC.m in Sources */,
 				53941F4717CE19B600DCD3E0 /* ThemeTVC.m in Sources */,

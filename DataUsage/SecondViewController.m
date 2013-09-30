@@ -721,6 +721,7 @@
     
     NSLog(@"Added to NSUserDefault & History Count :%i",[[defaults objectForKey:@"History"] count]);
     [self displayHistory];
+
     
 }
 

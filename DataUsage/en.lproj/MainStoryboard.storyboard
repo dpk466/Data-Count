@@ -264,7 +264,7 @@
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DataCount is now set up. Tap Done to start using DataCount." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="z8p-zs-0eV">
                                 <rect key="frame" x="23" y="310" width="290" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -340,7 +340,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="S5e-Vg-PLT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="374" y="-1410"/>
+            <point key="canvasLocation" x="-114" y="-1410"/>
         </scene>
         <!--Plan TypeTVC-->
         <scene sceneID="lxi-mo-aUR">
@@ -961,7 +961,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HkQ-DJ-BCh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-28" y="-1410"/>
+            <point key="canvasLocation" x="-554" y="-1410"/>
         </scene>
         <!--First View Controller-->
         <scene sceneID="A1I-Po-0qE">
@@ -1163,7 +1163,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="A7g-Kh-9wL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-554" y="-1410"/>
+            <point key="canvasLocation" x="-894" y="-1410"/>
         </scene>
     </scenes>
     <resources>

@@ -63,7 +63,6 @@
     
     NSLog(@"FirstViewDidLaod method called");
     
-    //[self displayHistory];
     
      NSDateFormatter *detailedDateFormat;
      detailedDateFormat = [[NSDateFormatter alloc] init];
@@ -84,7 +83,7 @@
     [self minimalDisplayOnView];
     [self setBackgroundColor];
     
-    //[self updateHistory];use to add the current data usage to histo®y table
+    //[self updateHistory];//use to add the current data usage to histo®y table
     
     [MyLocalNotifications createAndScheduleLocalNotifications];
     
@@ -208,6 +207,7 @@
     
     [dateFormat setDateFormat:@"dd MMM"];
     [dateFormatFordateInteger setDateFormat :@"dd"];
+    
     
     //Calculate End Date.................
     NSDate *endDate;
@@ -459,8 +459,7 @@
     //_percentageCellDataUsed = ceilf((float)(_currentCellUploadData + _currentCellDownloadData + [self getDataUsed])*100/[self getDataCap]);
     _percentageCellDataUsed = ((_currentCellUploadData + _currentCellDownloadData + [self getDataUsed])*100/[self getDataCap]);
     _percentageDataLabelForMinimumDisplay.text = [NSString stringWithFormat:@"%i",_percentageCellDataUsed];
-    
-    
+    if(_percentageCellDataUsed > 100)_percentageDataLabelForMinimumDisplay.text = @"99";
     
     NSString *stringForSingleDays = @"Plan ends today";
     if([self getDaysRemaining] == 1)
@@ -650,7 +649,7 @@
         [historyArray addObjectsFromArray:historyArrayLocal];
     }
     
-    NSLog(@"Before adding History Count :%i",[historyArray count]);
+    NSLog(@"Before adding History Count :%i",[[defaults objectForKey:@"History"] count]);
     
     //update the log history
     [defaults setObject:historyArray forKey:@"History"];

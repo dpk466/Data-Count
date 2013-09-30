@@ -22,6 +22,7 @@
 
 
 -(NSDate *)getStartDate;
+-(NSDate *)getEndDate;
 -(NSUInteger)getDataCap;
 -(NSUInteger)getDataUsed;
 
