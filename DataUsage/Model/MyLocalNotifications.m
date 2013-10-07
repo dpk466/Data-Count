@@ -69,7 +69,7 @@
             localNotification2.alertBody = @"Week 2 of your bill cycle ends in 3 hours. Open DataCount to check your usage.";
             localNotification3.alertBody = @"Week 3 of your bill cycle ends in 3 hours. Open DataCount to check your usage.";
             localNotification4.alertBody = @"Week 4 of your bill cycle ends in 3 hours. Open DataCount to update your usage.";
-            localNotification5.alertBody = @"Day 1 of your bill cycle has commenced. Open DataCount to update your usage.";
+            localNotification5.alertBody = @"Day 1 of your bill cycle has commenced. Open DataCount to automatically update your usage.";//start of new cycle
             
             
         }
@@ -98,7 +98,7 @@
             localNotification2.alertBody = @"Your bill cycle ends tomorrow. Open DataCount to check your usage.";
             localNotification3.alertBody = @"Your bill cycle ends today. Open DataCount to update your usage.";
             localNotification4.alertBody = @"Your bill cycle ends in 3 hours. Open DataCount to update your usage.";
-            localNotification5.alertBody = @"Day 1 of your bill cycle has commenced. Open DataCount to update your usage.";
+            localNotification5.alertBody = @"Day 1 of your bill cycle has commenced. Open DataCount to automatically update your usage.";//start of new cycle
             
         }
         /*
