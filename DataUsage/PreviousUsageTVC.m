@@ -36,6 +36,7 @@
     self.preferredContentSize = CGSizeMake(320, 500);
     
     defaults = [NSUserDefaults standardUserDefaults];
+    [defaults synchronize];
     _usageDetailArray = [NSArray arrayWithObjects:@"Data cap",@"Total usage",@"Upload",@"Download", nil];
     
     // Uncomment the following line to preserve selection between presentations.

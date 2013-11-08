@@ -92,6 +92,12 @@ int tag;
     {
         // The other button "CONFIRM" was tapped
         [defaults setInteger:0 forKey:@"Data Used"];
+        //for Earlier Used Data Picker Row
+        [defaults setInteger:0 forKey:@"DataUsedRowForComponent0"];
+        [defaults setInteger:0 forKey:@"DataUsedRowForComponent1"];
+        [defaults setInteger:0 forKey:@"DataUsedRowForComponent2"];
+        [defaults setInteger:0 forKey:@"DataUsedRowForComponent3"];
+        [defaults setInteger:0 forKey:@"DataUsedRowForComponent4"];
         if(tag == 0)
         {
             [defaults setBool:YES forKey:@"Reset"];

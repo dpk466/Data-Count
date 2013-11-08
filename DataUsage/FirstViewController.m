@@ -42,14 +42,12 @@
 @property (strong, nonatomic) NSString *downloadData;
 
 
-@property (strong,nonatomic) NSMutableArray *historyArray;
 
 @end
 
 @implementation FirstViewController
 
 @synthesize defaults, dateFormat, dateFormatFordateInteger;
-@synthesize historyArray;
 
 #pragma  mark-Xcode generated methods
 
@@ -426,7 +424,7 @@
         
         [defaults setObject:_data forKey:@"DataArrayAtLastReset"];
         
-        
+        [defaults setInteger:0 forKey:@"Data Used"];
         //for Earlier Used Data Picker Row
         [defaults setInteger:0 forKey:@"DataUsedRowForComponent0"];
         [defaults setInteger:0 forKey:@"DataUsedRowForComponent1"];
@@ -632,11 +630,11 @@
 -(void)updateHistory
 {
     NSLog(@"in updateHistory method");
-    historyArray = [[NSMutableArray alloc]init];
+    NSMutableArray *historyArray = [[NSMutableArray alloc]init];//a local MutableArray
     
     //current log
     NSArray *currentHistoryArrayObject = [[NSArray alloc]initWithObjects: _cycleName, _dataCapString, _dataUsed, _uploadData, _downloadData, nil];
-    NSLog(@"currentHistoryArrayObject Count: %i",[currentHistoryArrayObject count]);
+    NSLog(@"currentHistoryArrayObject Count: %i",[currentHistoryArrayObject count]);//it should always be 5
     
     // add the current log
     //[historyArray addObject:currentHistoryArrayObject];
@@ -654,9 +652,9 @@
     //update the log history
     [defaults setObject:historyArray forKey:@"History"];
     
-    NSLog(@"Added to NSUserDefault & History Count :%i",[[defaults objectForKey:@"History"] count]);
+    NSLog(@"After adding History Count :%i",[[defaults objectForKey:@"History"] count]);
     [self displayHistory];
-
+    
     
 }
 
@@ -666,7 +664,7 @@
     for(NSArray *aPInfo in [defaults objectForKey:@"History"])
     {
         
-        NSLog(@"History Display");
+        NSLog(@"displayHistory");
         for(NSString *details in aPInfo)
         {
             NSLog(@"......................");
