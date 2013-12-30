@@ -7,6 +7,7 @@
 //
 
 #import "AppOsVersion.h"
+#import "sys/sysctl.h"
 
 
 @implementation AppOsVersion
