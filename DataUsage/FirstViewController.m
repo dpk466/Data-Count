@@ -279,7 +279,29 @@
     NSInteger secondDay = [[dayFmt stringFromDate:[self getEndDate]] integerValue];// end date...
     NSInteger daysRemaining = secondDay - firstDay;
     
-    return daysRemaining;
+    if([self isYearLeapYear:[NSDate date]])
+    {
+        return daysRemaining%366;
+    }
+    else
+    {
+        return daysRemaining%365;
+        
+    }
+}
+
+- (BOOL)isYearLeapYear:(NSDate *) aDate
+{
+    NSInteger year = [self yearFromDate:aDate];
+    return (( year%100 != 0) && (year%4 == 0)) || year%400 == 0;
+}
+
+- (NSInteger)yearFromDate:(NSDate *)aDate
+{
+    NSDateFormatter *dateFormatter = [NSDateFormatter new];
+    dateFormatter.dateFormat = @"yyyy";
+    NSInteger year = [[dateFormatter stringFromDate:aDate] integerValue];
+    return year;
 }
 
 
