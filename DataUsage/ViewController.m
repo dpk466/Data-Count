@@ -208,4 +208,10 @@
     
 }
 
+#pragma mark - set the status bar font color to white
+-(UIStatusBarStyle)preferredStatusBarStyle
+{
+    return UIStatusBarStyleLightContent;
+}
+
 @end

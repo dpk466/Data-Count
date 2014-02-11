@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface Theme : NSObject
+@interface MyTheme : NSObject
 
 @property (strong,nonatomic) NSArray *theme0;
 @property (strong,nonatomic) NSArray *theme1;

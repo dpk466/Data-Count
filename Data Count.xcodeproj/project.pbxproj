@@ -26,7 +26,7 @@
 		5393BC4817EAFCDB00EB92A9 /* pastelsTheme.png in Resources */ = {isa = PBXBuildFile; fileRef = 5393BC4517EAFCDB00EB92A9 /* pastelsTheme.png */; };
 		5393BC4F17EAFF6F00EB92A9 /* AppOsVersion.m in Sources */ = {isa = PBXBuildFile; fileRef = 5393BC4A17EAFF6F00EB92A9 /* AppOsVersion.m */; };
 		5393BC5017EAFF6F00EB92A9 /* FindDataUsage.m in Sources */ = {isa = PBXBuildFile; fileRef = 5393BC4C17EAFF6F00EB92A9 /* FindDataUsage.m */; };
-		5393BC5117EAFF6F00EB92A9 /* Theme.m in Sources */ = {isa = PBXBuildFile; fileRef = 5393BC4E17EAFF6F00EB92A9 /* Theme.m */; };
+		5393BC5117EAFF6F00EB92A9 /* MyTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 5393BC4E17EAFF6F00EB92A9 /* MyTheme.m */; };
 		5393BC5317EB00D600EB92A9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5393BC5217EB00D600EB92A9 /* Images.xcassets */; };
 		5393BC5517EB07D600EB92A9 /* menu.png in Resources */ = {isa = PBXBuildFile; fileRef = 5393BC5417EB07D600EB92A9 /* menu.png */; };
 		5393BC5717EB07E500EB92A9 /* menu@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5393BC5617EB07E500EB92A9 /* menu@2x.png */; };
@@ -102,8 +102,8 @@
 		5393BC4A17EAFF6F00EB92A9 /* AppOsVersion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppOsVersion.m; path = DataUsage/Model/AppOsVersion.m; sourceTree = "<group>"; };
 		5393BC4B17EAFF6F00EB92A9 /* FindDataUsage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FindDataUsage.h; path = DataUsage/Model/FindDataUsage.h; sourceTree = "<group>"; };
 		5393BC4C17EAFF6F00EB92A9 /* FindDataUsage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FindDataUsage.m; path = DataUsage/Model/FindDataUsage.m; sourceTree = "<group>"; };
-		5393BC4D17EAFF6F00EB92A9 /* Theme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Theme.h; path = DataUsage/Model/Theme.h; sourceTree = "<group>"; };
-		5393BC4E17EAFF6F00EB92A9 /* Theme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Theme.m; path = DataUsage/Model/Theme.m; sourceTree = "<group>"; };
+		5393BC4D17EAFF6F00EB92A9 /* MyTheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MyTheme.h; path = DataUsage/Model/MyTheme.h; sourceTree = "<group>"; };
+		5393BC4E17EAFF6F00EB92A9 /* MyTheme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MyTheme.m; path = DataUsage/Model/MyTheme.m; sourceTree = "<group>"; };
 		5393BC5217EB00D600EB92A9 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		5393BC5417EB07D600EB92A9 /* menu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = menu.png; path = Basic/menu.png; sourceTree = "<group>"; };
 		5393BC5617EB07E500EB92A9 /* menu@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "menu@2x.png"; path = "Basic/menu@2x.png"; sourceTree = "<group>"; };
@@ -355,8 +355,8 @@
 				5393BC4A17EAFF6F00EB92A9 /* AppOsVersion.m */,
 				5393BC4B17EAFF6F00EB92A9 /* FindDataUsage.h */,
 				5393BC4C17EAFF6F00EB92A9 /* FindDataUsage.m */,
-				5393BC4D17EAFF6F00EB92A9 /* Theme.h */,
-				5393BC4E17EAFF6F00EB92A9 /* Theme.m */,
+				5393BC4D17EAFF6F00EB92A9 /* MyTheme.h */,
+				5393BC4E17EAFF6F00EB92A9 /* MyTheme.m */,
 				539F3D7217F590D800E774FD /* KeychainItemWrapper.h */,
 				539F3D7317F590D800E774FD /* KeychainItemWrapper.m */,
 				539F3D7517F593A600E774FD /* MyLocalNotifications.h */,
@@ -513,7 +513,7 @@
 				5393BC4217EAE38400EB92A9 /* SecondViewController.m in Sources */,
 				53676BD017F16EF9007DCA6B /* NotificationsViewController.m in Sources */,
 				539F3D7717F593A600E774FD /* MyLocalNotifications.m in Sources */,
-				5393BC5117EAFF6F00EB92A9 /* Theme.m in Sources */,
+				5393BC5117EAFF6F00EB92A9 /* MyTheme.m in Sources */,
 				5380D80317CB647500F4FBB5 /* ResetVC.m in Sources */,
 				53941F4717CE19B600DCD3E0 /* ThemeTVC.m in Sources */,
 				5398552417D9DCE40096E90D /* ViewController.m in Sources */,

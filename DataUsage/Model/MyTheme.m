@@ -6,9 +6,9 @@
 //  Copyright (c) 2013 Deepak Bharati. All rights reserved.
 //
 
-#import "Theme.h"
+#import "MyTheme.h"
 
-@implementation Theme
+@implementation MyTheme
 
 @synthesize theme0,theme1,theme2;//,theme3,theme4;
 

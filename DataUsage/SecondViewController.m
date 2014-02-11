@@ -9,7 +9,7 @@
 #import "SecondViewController.h"
 
 #import "FindDataUsage.h"
-#import "Theme.h"
+#import "MyTheme.h"
 #import "MyLocalNotifications.h"
 
 @interface SecondViewController ()
@@ -632,32 +632,32 @@
     {
             
         case 0:
-            return [[Theme alloc]init].theme0;
+            return [[MyTheme alloc]init].theme0;
             break;
             
         case 1:
-            return [[Theme alloc]init].theme1;
+            return [[MyTheme alloc]init].theme1;
             break;
             
         case 2:
-            return [[Theme alloc]init].theme2;
+            return [[MyTheme alloc]init].theme2;
             break;
             
             /*case 3:
-             return [[Theme alloc]init].theme3;
+             return [[MyTheme alloc]init].theme3;
              break;
              
              case 4:
-             return [[Theme alloc]init].theme4;
+             return [[MyTheme alloc]init].theme4;
              break;
              */
             
         defaults:
-            return [[Theme alloc]init].theme0;
+            return [[MyTheme alloc]init].theme0;
             break;
             
     }
-    return [[Theme alloc]init].theme0;
+    return [[MyTheme alloc]init].theme0;
     
 }
 
