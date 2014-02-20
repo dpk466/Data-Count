@@ -8,6 +8,7 @@
 
 #import "AddUsageVC.h"
 #import "FirstViewController.h"
+#import "Flurry.h"
 
 @interface AddUsageVC ()
 {
@@ -162,6 +163,7 @@
 - (void) save
 {
     NSLog(@"saving existing usage");
+    [Flurry logEvent:@"saving existing usage"];
     
     NSUInteger prevUsage = [defaults integerForKey:@"Data Used"];
     NSString *prevUnit = [defaults objectForKey:@"Data Used Unit"];

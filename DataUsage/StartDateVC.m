@@ -9,6 +9,7 @@
 #import "StartDateVC.h"
 #import "DataCapVC.h"
 #import "MyLocalNotifications.h"
+#import "Flurry.h"
 
 @interface StartDateVC ()<UIPickerViewDataSource, UIPickerViewDelegate>
 
@@ -112,6 +113,7 @@ id weekDay;
 - (void) save
 {
     NSLog(@"saving start date");
+    [Flurry logEvent:@"saving start date"];
     
     if(startDate)
     {

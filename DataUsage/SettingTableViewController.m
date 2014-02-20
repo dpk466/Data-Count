@@ -21,7 +21,7 @@
 #import "AppOsVersion.h"
 
 //#import <MessageUI/MFMessageComposeViewController.h>
-
+#import "Flurry.h"
 
 
 @interface SettingTableViewController ()<MFMailComposeViewControllerDelegate>
@@ -164,6 +164,7 @@
             case 1:
                 if([[[defaults objectForKey:@"History"] objectAtIndex:0] count] >= 1)
                 {
+                    [Flurry logEvent:@"Previous Usage"];
                     NSLog(@"History available");
                     previousUsageTVC.title = @"Previous Usage";
                     // Pass the selected object to the new view controller.
@@ -171,6 +172,7 @@
                 }
                 else
                 {
+                    [Flurry logEvent:@"No Previous Usage"];
                     UIAlertView *alert = [[UIAlertView alloc]
                                           initWithTitle:@"Previous usage"
                                           message:[NSString stringWithFormat:@"You have no previous usage data."]
@@ -217,6 +219,7 @@
                 resetVC.title = @"Reset";
                 // Pass the selected object to the new view controller.
                 [self.navigationController pushViewController:resetVC animated:YES];
+                [Flurry logEvent:@"goToReset"];
                 break;
                 
 

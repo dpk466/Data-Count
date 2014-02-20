@@ -10,7 +10,7 @@
 #import "KeychainItemWrapper.h"
 
 #import "MyLocalNotifications.h"
-
+#import "Flurry.h"
 
 @interface AppDelegate()
 
@@ -31,6 +31,10 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    [Flurry setCrashReportingEnabled:YES];
+    //note: iOS only allows one crash reporting tool per app; if using another, set to: NO
+    [Flurry startSession:@"53XHPT32C28PK8QGN97W"];
+    
     //for getting value from keychain
     KeychainItemWrapper *keychainItem = [[KeychainItemWrapper alloc] initWithIdentifier:@"DataCount" accessGroup:nil];
     //for getting value from keychain

@@ -74,7 +74,7 @@
      //NSLog(@"Earlier Usage: %i %@",[defaults integerForKey:@"Data Used"],[defaults objectForKey:@"Data Used Unit"]);
     
     
-    _currentColorTheme = [self getThemeType];
+    //_currentColorTheme = [self getThemeType];
     
     [self findCurrentData];
     [self setCustomFont];
@@ -602,6 +602,7 @@
 
 -(void)setBackgroundColor  //call [self setBackgroundColor] in viewDidLoad;
 {
+    _currentColorTheme = [self getThemeType];
     //if(_currentCellData)// in case theme required only for cellular connection
     {
         if(_percentageCellDataUsed<20)
@@ -638,7 +639,7 @@
     [self findCurrentData];
     [self minimalDisplayOnView];
     [self setCustomFont];
-    _currentColorTheme = [self getThemeType];
+    //_currentColorTheme = [self getThemeType];
     [self setBackgroundColor];//sets different of colors to background
     
     [[NSNotificationCenter defaultCenter] postNotificationName:@"updateColor"object:self];

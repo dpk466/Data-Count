@@ -7,6 +7,7 @@
 //
 
 #import "PreviousUsageTVC.h"
+#import "Flurry.h"
 
 @interface PreviousUsageTVC ()
 
@@ -34,6 +35,8 @@
 {
     [super viewDidLoad];
     self.preferredContentSize = CGSizeMake(320, 500);
+    
+    [Flurry logEvent:@"Previous usage dispalyed"];
     
     defaults = [NSUserDefaults standardUserDefaults];
     [defaults synchronize];

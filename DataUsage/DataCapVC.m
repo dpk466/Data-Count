@@ -9,6 +9,7 @@
 #import "DataCapVC.h"
 #import "AddUsageVC.h"
 #import "FirstViewController.h"
+#import "Flurry.h"
 
 @interface DataCapVC ()
 
@@ -168,6 +169,7 @@
 - (void) save
 {
     NSLog(@"saving data cap");
+    [Flurry logEvent:@"saving data cap"];
     
     NSUInteger prevCap = [defaults integerForKey:@"Data Cap"];
     NSString *prevUnit = [defaults objectForKey:@"Data Cap Unit"];

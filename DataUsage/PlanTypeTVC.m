@@ -10,6 +10,8 @@
 #import "StartDateVC.h"
 #import "MyLocalNotifications.h"
 
+#import "Flurry.h"
+
 @interface PlanTypeTVC ()
 
 @property (nonatomic) NSUInteger planTypeRow;
@@ -114,6 +116,7 @@ id planTypeString;
 - (void) save
 {
     NSLog(@"saving plan type");
+    [Flurry logEvent:@"saving plan type"];
    
     [defaults setInteger:self.planTypeRow ? self.planTypeRow : 0 forKey:@"Plan Type"];
    

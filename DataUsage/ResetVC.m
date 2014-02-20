@@ -7,6 +7,8 @@
 //
 
 #import "ResetVC.h"
+#import "Flurry.h"
+
 
 @interface ResetVC ()<UIAlertViewDelegate>
 @property (strong, nonatomic) IBOutlet UILabel *resetLabel;
@@ -52,6 +54,7 @@ int tag;
 - (IBAction)gestureToRestet:(id)sender
 {
     //NSLog(@"Gesture Recognosed for Reset Current");
+    [Flurry logEvent:@"Reset Current"];
     tag = 0;
     alertMessage = @"Reset Current";
     alertTitle = @"Data for your current bill cycle will be erased.";
@@ -67,6 +70,7 @@ int tag;
 
 - (IBAction)gestureToRestetAll:(id)sender
 {
+    [Flurry logEvent:@"Reset All"];
     //NSLog(@"Gesture Recognosed for Reset All");
     tag = 1;
     alertMessage = @"Reset All";

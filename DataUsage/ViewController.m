@@ -10,7 +10,7 @@
 //#import "RootViewController.h"
 #import "FirstViewController.h"
 #import "SecondViewController.h"
-
+#import "Flurry.h"
 
 
 @interface ViewController ()
@@ -32,7 +32,7 @@
 - (IBAction)goToSetting:(id)sender
 {
     NSLog(@"goToSetting");
-   
+    [Flurry logEvent:@"goToSetting"];
     
     //if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
     if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad)
